@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>여디디야 2026 · 두 개의 시간, 하나의 공동체</title>
+<meta name="description" content="여디디야 청년부 2026 통합사역 기획안 — 두 개의 시간, 하나의 공동체. 연합예배·목장 차별화·주일 리듬·양육·외부 봉사.">
+<meta name="theme-color" content="#1E1B4B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231E1B4B'/%3E%3Cpath d='M6 10 Q16 10 20 16' stroke='%239089DA' stroke-width='2' fill='none'/%3E%3Ccircle cx='21' cy='16' r='5' fill='%23E9CF86'/%3E%3C/svg%3E">
+<!-- 공유 미리보기(카카오톡·페이스북·X 등) — 발행 후 USERNAME/REPO를 실제 주소로 바꿔주세요 -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="여디디야 청년부">
+<meta property="og:title" content="두 개의 시간, 하나의 공동체">
+<meta property="og:description" content="여디디야 2026 통합사역 기획안 — 오전은 붓는 시간, 오후 2시 연합예배는 채우는 시간.">
+<meta property="og:url" content="https://USERNAME.github.io/REPO/">
+<meta property="og:image" content="https://USERNAME.github.io/REPO/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="두 개의 시간, 하나의 공동체">
+<meta name="twitter:description" content="여디디야 2026 통합사역 기획안">
+<meta name="twitter:image" content="https://USERNAME.github.io/REPO/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo:#4F46E5; --indigo-7:#4338CA; --indigo-9:#312E81; --ink:#1E1B4B;
+  --tint:#EEF2FF; --tint-2:#F5F3FF; --mid:#E0E7FF;
+  --gold:#B88A3E; --gold-soft:#F4ECDC; --gold-line:#D9C08A;
+  --bg:#FCFCFD; --paper:#FFFFFF; --body:#3F4654; --muted:#8A90A0;
+  --line:#ECECF3; --hair:#E4E4EE;
+  --serif:'Noto Serif KR',serif; --sans:'Noto Sans KR',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--body);line-height:1.7;
+  font-weight:400;word-break:keep-all;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.wrap{max-width:720px;margin:0 auto;background:var(--bg);overflow:hidden}
+svg{display:block;width:100%;height:auto}
+
+/* progress + nav */
+#bar{position:fixed;top:0;left:0;height:2px;width:0;background:var(--indigo);z-index:60;transition:width .1s}
+.nav{position:sticky;top:0;z-index:50;background:rgba(252,252,253,.86);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav-in{display:inline-flex;gap:4px;padding:10px 18px}
+.nav a{font-size:12px;font-weight:500;letter-spacing:.01em;color:var(--muted);text-decoration:none;
+  padding:6px 12px;border-radius:8px;transition:.18s}
+.nav a:hover,.nav a:focus-visible{color:var(--indigo-7);background:var(--tint)}
+
+/* section frame */
+section{padding:62px 24px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--indigo);
+  text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.eyebrow::before{content:"";width:22px;height:1.5px;background:var(--indigo);display:inline-block}
+h2.title{font-family:var(--serif);font-weight:700;font-size:25px;line-height:1.4;
+  letter-spacing:-.01em;color:var(--ink);margin-bottom:10px}
+.cap{font-size:14px;color:var(--muted);max-width:42ch;margin-bottom:8px}
+.reveal{transition:opacity .7s ease,transform .7s ease}
+.anim .reveal{opacity:0;transform:translateY(16px)}
+.anim .reveal.in{opacity:1;transform:none}
+
+/* HERO */
+.hero{background:radial-gradient(120% 90% at 80% 0%,#3A338F 0%,#1E1B4B 60%);
+  color:#fff;padding:54px 24px 30px;position:relative}
+.hero .eyebrow{color:#C7C2F0}
+.hero .eyebrow::before{background:#C7C2F0}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:38px;line-height:1.22;
+  letter-spacing:-.02em;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:#C9AE6B}
+.hero p{font-size:15px;color:#C9C7E6;max-width:40ch}
+.hero .scope{margin-top:24px;display:flex;flex-wrap:wrap;gap:7px}
+.hero .scope span{font-size:11.5px;font-weight:500;color:#D9D7F0;
+  border:1px solid rgba(201,199,230,.32);border-radius:999px;padding:4px 11px}
+.hero-svg{margin-top:20px}
+
+/* day timeline */
+.day{display:flex;flex-direction:column;gap:0;margin-top:6px}
+.dr{display:grid;grid-template-columns:62px 26px 1fr;align-items:start;position:relative}
+.dr .t{font-family:var(--serif);font-size:13px;font-weight:600;color:var(--indigo);
+  text-align:right;padding-top:13px;line-height:1.25}
+.dr .axis{position:relative;display:flex;justify-content:center}
+.dr .axis::before{content:"";position:absolute;top:0;bottom:0;width:2px;background:var(--mid)}
+.dr:first-child .axis::before{top:18px}
+.dr:last-child .axis::before{bottom:auto;height:18px}
+.dr .node{position:relative;z-index:2;width:12px;height:12px;border-radius:50%;background:var(--indigo);
+  border:3px solid #fff;box-shadow:0 0 0 2px var(--mid);margin-top:14px}
+.dr .c{padding:11px 0 22px 8px}
+.dr .c h4{font-size:14.5px;font-weight:700;color:var(--ink)}
+.dr .c p{font-size:12.5px;color:var(--muted);margin-top:3px}
+.dr.peak .t{color:var(--gold)}
+.dr.peak .node{background:var(--gold);box-shadow:0 0 0 2px var(--gold-line),0 0 14px rgba(184,138,62,.5)}
+.dr.peak .c{background:linear-gradient(180deg,var(--gold-soft),#fff);border:1px solid var(--gold-line);
+  border-radius:14px;padding:13px 14px;margin-left:4px}
+.dr.peak .c h4{color:var(--gold)}
+.dr.peak .c .badge{display:inline-block;font-size:10.5px;font-weight:700;color:#fff;background:var(--gold);
+  padding:2px 9px;border-radius:999px;margin-bottom:5px;letter-spacing:.04em}
+
+.note{display:flex;gap:11px;background:var(--paper);border:1px solid var(--line);
+  border-left:3px solid var(--gold);border-radius:14px;padding:14px 16px;margin-top:22px}
+.note .ic{font-size:18px;flex-shrink:0}
+.note .tx{font-size:13px;color:var(--body)}
+.note .tx b{font-weight:700;color:var(--ink)}
+
+/* principle chips */
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.chip{background:var(--paper);border:1px solid var(--hair);border-radius:13px;padding:13px 14px}
+.chip .n{font-family:var(--serif);font-size:13px;font-weight:700;color:var(--indigo);opacity:.5}
+.chip .x{font-size:13px;font-weight:600;color:var(--ink);margin-top:3px;line-height:1.45}
+
+/* part header band */
+.band{background:var(--ink);color:#fff;padding:30px 24px}
+.band .pe{font-size:11px;font-weight:700;letter-spacing:.22em;color:#9A95D6}
+.band-row{display:flex;align-items:baseline;gap:16px;margin-top:8px}
+.band .pno{font-family:var(--serif);font-size:46px;font-weight:900;color:#3F398C;line-height:.9;flex-shrink:0}
+.band h2{font-family:var(--serif);font-size:23px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.band p{font-size:13px;color:#B7B3E0;margin-top:10px}
+
+/* lifecycle cards */
+.life{display:grid;grid-template-columns:1fr;gap:12px;margin-top:8px}
+.lc{display:flex;gap:15px;align-items:center;background:var(--paper);border:1px solid var(--hair);
+  border-radius:16px;padding:16px 17px;position:relative}
+.lc .ico{flex-shrink:0;width:48px;height:48px}
+.lc .meta{flex:1;min-width:0}
+.lc .kw{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--indigo)}
+.lc .nm{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--ink);margin:1px 0 2px}
+.lc .ds{font-size:12.5px;color:var(--muted)}
+.lc .when{font-size:10.5px;font-weight:700;color:var(--indigo-7);background:var(--tint);
+  padding:3px 9px;border-radius:999px;white-space:nowrap}
+.lc.h .when{color:var(--gold);background:var(--gold-soft)}
+.flowdown{text-align:center;color:var(--mid);font-size:18px;line-height:.5;margin:-4px 0}
+
+/* generic visual card */
+.vcard{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin-top:8px;
+  box-shadow:0 6px 22px rgba(30,27,75,.04)}
+.mini{font-size:12.5px;color:var(--muted);text-align:center;margin-top:12px}
+.legend{display:flex;justify-content:center;gap:16px;margin-top:12px;flex-wrap:wrap}
+.legend span{font-size:11.5px;color:var(--body);display:inline-flex;align-items:center;gap:6px}
+.legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
+
+/* two-track */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:8px}
+.tk{border-radius:16px;padding:16px;border:1px solid}
+.tk.s{background:var(--tint-2);border-color:var(--mid)}
+.tk.w{background:#F2FBF6;border-color:#BBE9CF}
+.tk .h{font-size:13px;font-weight:700;color:var(--ink);display:flex;gap:6px;align-items:center}
+.tk .am{font-size:11px;font-weight:700;color:var(--muted);margin-top:9px}
+.tk .row{font-size:12.5px;color:var(--body);margin-top:3px}
+.tk .row b{font-weight:700;color:var(--ink)}
+
+/* small steps */
+.steps{display:flex;flex-direction:column;gap:0;margin-top:8px}
+.stp{display:flex;gap:13px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.stp:last-child{border-bottom:0}
+.stp .k{flex-shrink:0;width:30px;height:30px;border-radius:9px;background:var(--tint);color:var(--indigo-7);
+  font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;font-family:var(--serif)}
+.stp .v{font-size:13.5px;color:var(--body)}
+.stp .v b{font-weight:700;color:var(--ink)}
+
+/* detail accordion (quiet) */
+details.more{margin-top:16px;border-top:1px solid var(--line)}
+details.more summary{list-style:none;cursor:pointer;font-size:12px;font-weight:600;color:var(--indigo);
+  padding:13px 0 2px;display:flex;align-items:center;gap:6px}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary .pl{transition:transform .2s}
+details.more[open] summary .pl{transform:rotate(45deg)}
+.tbl{overflow-x:auto;scrollbar-width:none;margin-top:12px;border:1px solid var(--line);border-radius:12px}
+.tbl::-webkit-scrollbar{display:none}
+table{border-collapse:collapse;width:100%;font-size:12px;min-width:max-content}
+th{background:var(--tint);color:var(--indigo-9);font-weight:700;padding:9px 11px;text-align:left;white-space:nowrap}
+td{padding:9px 11px;border-top:1px solid var(--line);color:var(--body);vertical-align:top}
+tr:nth-child(even) td{background:#FBFBFE}
+.dlist{margin-top:6px}
+.dlist li{list-style:none;font-size:13px;color:var(--body);padding:7px 0 7px 16px;position:relative;border-bottom:1px solid var(--line)}
+.dlist li::before{content:"";position:absolute;left:0;top:15px;width:5px;height:5px;border-radius:50%;background:var(--indigo)}
+.dlist li b{font-weight:700;color:var(--ink)}
+
+/* discuss grid */
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}
+.dg div{font-size:12px;color:var(--body);background:var(--paper);border:1px solid var(--hair);
+  border-radius:11px;padding:11px 12px;display:flex;gap:8px;align-items:flex-start}
+.dg div .no{font-family:var(--serif);font-size:12px;font-weight:800;color:var(--indigo);opacity:.55;flex-shrink:0}
+
+/* footer */
+.foot{background:var(--ink);color:#C9C7E6;text-align:center;padding:40px 24px 48px}
+.foot .s{font-family:var(--serif);font-weight:700;color:#fff;font-size:15px;margin-bottom:6px}
+.foot .d{font-size:12px;opacity:.75}
+.foot .n{font-size:11px;opacity:.55;margin-top:14px}
+
+@media(min-width:600px){ .life{grid-template-columns:1fr 1fr 1fr} .flowdown{display:none} }
+@media(prefers-reduced-motion:reduce){ .anim .reveal{opacity:1;transform:none;transition:none} #bar{transition:none} }
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="eyebrow">여디디야 2026 통합사역 기획안</div>
+    <h1>두 개의 시간,<br><em>하나의</em> 공동체</h1>
+    <p>오전은 붓는 시간, 오후 2시 연합예배는 채우는 시간. 시간이 갈리니 동선은 저절로 나뉘고, 한 자리에서 한 몸을 확인합니다.</p>
+    <div class="hero-svg">
+      <svg viewBox="0 0 360 176" role="img" aria-label="오전과 오후가 오후 2시 연합예배에서 만나는 도식">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#E9CF86" stop-opacity=".55"/><stop offset="100%" stop-color="#E9CF86" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path d="M14,30 C120,30 190,70 252,86" fill="none" stroke="#8C86D8" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14,150 C120,150 190,104 252,90" fill="none" stroke="#C9AE6B" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 7"/>
+        <text x="16" y="22" fill="#B7B3E0" font-family="Noto Sans KR" font-size="11" font-weight="700">오전 · 이음 대예배</text>
+        <text x="16" y="166" fill="#C9AE6B" font-family="Noto Sans KR" font-size="11" font-weight="700">오후 · 여디디야 연합예배</text>
+        <circle cx="256" cy="88" r="34" fill="url(#glow)"/>
+        <circle cx="256" cy="88" r="9" fill="#E9CF86" stroke="#1E1B4B" stroke-width="2"/>
+        <text x="276" y="84" fill="#fff" font-family="Noto Serif KR" font-size="15" font-weight="900">2 PM</text>
+        <text x="276" y="100" fill="#C9C7E6" font-family="Noto Sans KR" font-size="10">한 공동체로 만남</text>
+      </svg>
+    </div>
+    <div class="scope">
+      <span>① 연합예배</span><span>② 목장 차별화</span><span>③ 주일 리듬</span><span>④ 양육·훈련</span><span>⑤ 외부 봉사</span>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav"><div class="nav-in">
+    <a href="#flow">하루의 흐름</a><a href="#p1">연합예배</a><a href="#p2">목장</a><a href="#p3">주일 리듬</a>
+    <a href="#p4">양육</a><a href="#p5">외부 봉사</a><a href="#p6">사명자 순환</a><a href="#p7">논의</a>
+  </div></nav>
+
+  <!-- DAY FLOW -->
+  <section id="flow">
+    <div class="reveal">
+      <div class="eyebrow">하루의 흐름</div>
+      <h2 class="title">시간이 다르니,<br>동선이 저절로 나뉜다</h2>
+    </div>
+    <div class="day reveal">
+      <div class="dr"><div class="t">오전<br>11–12</div><div class="axis"><div class="node"></div></div>
+        <div class="c"><h4>주일 3부 대예배</h4><p>이음 부모예배 · 여디디야 ~20명 부서 섬김 · 그 외 대예배 독려</p></div></div>
+      <div class="dr"><div class="t">정오<br>12–14</div><div class="axis"><div class="node"></div></div>
+        <div class="c"><h4>이음 목장 · 여디디야 쉼터</h4><p>이음은 정오에 본 목장 / 여디디야는 점심·교제 · 지오스 리허설</p></div></div>
+      <div class="dr peak"><div class="t">오후<br>2:00</div><div class="axis"><div class="node"></div></div>
+        <div class="c"><span class="badge">만나는 지점</span><h4>여디디야 연합예배</h4><p>여디+디야의 본 예배 · 이음은 ‘연합 참여’(선택)</p></div></div>
+      <div class="dr"><div class="t">예배 후</div><div class="axis"><div class="node"></div></div>
+        <div class="c"><h4>여디 · 디야 목장모임</h4><p>부서별 장소로 분리 (이음은 정오에 완료)</p></div></div>
+    </div>
+    <div class="note reveal"><div class="ic">🫶</div><div class="tx"><b>영유아 부모</b>는 오전에 대예배조차 못 드리는 경우가 많습니다. 오후 연합예배 + 자모실이 한 주의 <b>유일한 온전한 예배</b> — 가장 먼저 환대할 대상입니다.</div></div>
+    <div class="chips reveal" style="margin-top:22px">
+      <div class="chip"><div class="n">01</div><div class="x">이음의 오전 리듬 존중</div></div>
+      <div class="chip"><div class="n">02</div><div class="x">2시 연합예배가 만나는 지점</div></div>
+      <div class="chip"><div class="n">03</div><div class="x">목장은 생애주기로 나뉨</div></div>
+      <div class="chip"><div class="n">04</div><div class="x">시간 분산 → 동선 분산</div></div>
+    </div>
+  </section>
+
+  <!-- PART 1 -->
+  <div class="band"><div class="pe">PART 01</div>
+    <div class="band-row"><div class="pno">01</div><h2>여디디야 연합예배</h2></div>
+    <p>고백의 밀도로 세대를 잇는 찬양 — 점진적으로 차오르는 상승 곡선</p></div>
+  <section id="p1">
+    <div class="reveal">
+      <div class="eyebrow">찬양 콘티 · 상승 곡선</div>
+      <h2 class="title">초반에 폭발시키지 않는다</h2>
+      <p class="cap">열기는 박자가 아니라 고백의 밀도에서. 모두가 자기 속도로 차오르도록.</p>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 210" role="img" aria-label="찬양 영적 온도가 점진적으로 상승하는 곡선">
+        <line x1="34" y1="14" x2="34" y2="176" stroke="#E4E4EE" stroke-width="1"/>
+        <line x1="34" y1="176" x2="346" y2="176" stroke="#E4E4EE" stroke-width="1"/>
+        <text x="30" y="24" text-anchor="end" fill="#8A90A0" font-family="Noto Sans KR" font-size="9" transform="rotate(-90 12 95)">영적 온도</text>
+        <path d="M34,168 C70,164 92,150 116,130 C140,110 150,74 186,56 C214,42 232,40 250,40" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M250,40 C262,52 270,96 286,96" fill="none" stroke="#C9AE6B" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 5"/>
+        <path d="M286,96 C300,96 308,58 330,52" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="62" cy="160" r="4" fill="#4F46E5"/><text x="62" y="192" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9.5">1곡</text>
+        <circle cx="116" cy="130" r="4" fill="#4F46E5"/><text x="116" y="192" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9.5">2곡</text>
+        <circle cx="170" cy="64" r="4" fill="#4F46E5"/><text x="170" y="192" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9.5">3곡</text>
+        <circle cx="250" cy="40" r="5.5" fill="#E9CF86" stroke="#1E1B4B" stroke-width="1.5"/><text x="250" y="192" text-anchor="middle" fill="#B88A3E" font-family="Noto Sans KR" font-size="9.5" font-weight="700">4곡·기도</text>
+        <text x="286" y="116" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9.5">설교</text>
+        <circle cx="330" cy="52" r="4" fill="#4F46E5"/><text x="330" y="192" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9.5">반응찬양</text>
+      </svg>
+      <div class="legend">
+        <span><i style="background:#4F46E5"></i>찬양 상승</span>
+        <span><i style="background:#C9AE6B"></i>말씀 — 머무름</span>
+      </div>
+      <p class="mini">2~3곡 전환: 에너지를 <b style="color:#1E1B4B">식히지 말고 방향만</b> 바꾼다 — 건반 패드 유지 + 짧은 고백 멘트로 다리 놓기.</p>
+    </div>
+
+    <div class="chips reveal" style="margin-top:20px">
+      <div class="chip"><div class="n">원리</div><div class="x">고백의 밀도가 열기다</div></div>
+      <div class="chip"><div class="n">원리</div><div class="x">곡 사이 연결이 온도다</div></div>
+      <div class="chip"><div class="n">원리</div><div class="x">찬양팀=기도 인도자</div></div>
+      <div class="chip"><div class="n">원리</div><div class="x">감정 아닌 말씀·결단</div></div>
+    </div>
+
+    <div class="note reveal"><div class="ic">🎙️</div><div class="tx">반응 방식은 ‘강요’가 아닌 <b>‘초대’</b>. 마지막 후렴 1회는 밴드를 줄이고 <b>회중 목소리만으로</b> — 그 한 소리가 곧 연합의 메시지입니다.</div></div>
+
+    <details class="more reveal"><summary><span class="pl">＋</span> 큐시트(안) · 지오스 운영 자세히</summary>
+      <div class="tbl"><table>
+        <tr><th>시간</th><th>순서</th><th>변경점</th></tr>
+        <tr><td>14:02</td><td>찬양(지오스)</td><td><b>상승 곡선 콘티</b></td></tr>
+        <tr><td>~14:30</td><td>고백·기도 연결</td><td><b>신설</b> 개인기도 1~2분</td></tr>
+        <tr><td>14:42</td><td>설교</td><td>—</td></tr>
+        <tr><td>15:15</td><td>반응찬양+합심기도</td><td><b>설교 연결 곡 추가</b></td></tr>
+        <tr><td>15:25</td><td>여디·디야 목장 이동</td><td>부서별 분리</td></tr>
+      </table></div>
+      <ul class="dlist">
+        <li>지오스: 토 10–13시 연습(필참) · 주일 13시 리허설 · 14시 인도</li>
+        <li><b>밝고 열린 방향</b>으로 전환(리더 협의 중) · 외부 찬양 현장을 <b>교회 지원 세미나</b>로</li>
+        <li>선곡은 회중이 따라 부를 수 있는 곡 우선 · 너무 높은 키 지양</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- PART 2 -->
+  <div class="band"><div class="pe">PART 02</div>
+    <div class="band-row"><div class="pno">02</div><h2>목장 차별화</h2></div>
+    <p>씨앗에서 열매까지 — 신앙 여정의 단계로 이어지는 세 목장</p></div>
+  <section id="p2">
+    <div class="reveal">
+      <div class="eyebrow">생애주기 파이프라인</div>
+      <h2 class="title">훈련받고 · 정착하고 · 가정을 이루고</h2>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 268" role="img" aria-label="여디에서 디야를 거쳐 이음으로 상승하는 생애주기 여정">
+        <path d="M56,202 C108,192 130,160 180,140 C230,120 250,92 304,70" fill="none" stroke="#CBD0E6" stroke-width="2.5" stroke-linecap="round"/>
+        <text x="244" y="40" fill="#A7AEC8" font-family="Noto Serif KR" font-size="11" font-weight="700">성장 ↗</text>
+        <!-- 여디 -->
+        <rect x="37" y="154" width="38" height="16" rx="8" fill="#EEF2FF"/><text x="56" y="165.5" text-anchor="middle" fill="#4338CA" font-family="Noto Sans KR" font-size="9" font-weight="700">오후</text>
+        <circle cx="56" cy="202" r="27" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+        <g transform="translate(41.4,187.4) scale(0.61)"><path d="M24 40 V24" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M24 27 C24 18 16 15 11 16 C12 24 18 27 24 27Z" fill="#A7F3D0" stroke="#10B981" stroke-width="2.4"/><path d="M24 24 C24 16 31 12 37 13 C36 21 30 24 24 24Z" fill="#6EE7B7" stroke="#10B981" stroke-width="2.4"/></g>
+        <text x="56" y="247" text-anchor="middle" fill="#1E1B4B" font-family="Noto Serif KR" font-size="15" font-weight="700">여디</text>
+        <text x="56" y="261" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="8.5">대학(원)생 · 2년 재편성</text>
+        <!-- 디야 -->
+        <rect x="161" y="92" width="38" height="16" rx="8" fill="#EEF2FF"/><text x="180" y="103.5" text-anchor="middle" fill="#4338CA" font-family="Noto Sans KR" font-size="9" font-weight="700">오후</text>
+        <circle cx="180" cy="140" r="27" fill="#EEF2FF" stroke="#4F46E5" stroke-width="2"/>
+        <g transform="translate(165.4,125.4) scale(0.61)"><path d="M24 42 V28" stroke="#4F46E5" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="24" cy="19" r="11" fill="#C7D2FE" stroke="#4F46E5" stroke-width="2.4"/></g>
+        <text x="180" y="185" text-anchor="middle" fill="#1E1B4B" font-family="Noto Serif KR" font-size="15" font-weight="700">디야</text>
+        <text x="180" y="199" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="8.5">사회초년생 · 거의 고정</text>
+        <!-- 이음 -->
+        <rect x="285" y="22" width="38" height="16" rx="8" fill="#F4ECDC"/><text x="304" y="33.5" text-anchor="middle" fill="#B88A3E" font-family="Noto Sans KR" font-size="9" font-weight="700">정오</text>
+        <circle cx="304" cy="70" r="27" fill="#FDF2F8" stroke="#EC4899" stroke-width="2"/>
+        <g transform="translate(289.4,55.4) scale(0.61)"><path d="M11 24 L24 13 L37 24" fill="none" stroke="#EC4899" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 23 V38 H34 V23" fill="#FCE7F3" stroke="#EC4899" stroke-width="2.4" stroke-linejoin="round"/><path d="M21 38 V30 H27 V38" fill="none" stroke="#EC4899" stroke-width="2.4"/></g>
+        <text x="304" y="114" text-anchor="middle" fill="#1E1B4B" font-family="Noto Serif KR" font-size="15" font-weight="700">이음</text>
+        <text x="304" y="128" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="8.5">결혼 가정 · 12목장+</text>
+      </svg>
+    </div>
+    <p class="mini reveal" style="margin-top:18px">결혼하면 떠나던 흐름을 <b style="color:#1E1B4B">붙들어</b> — “2~3년 뒤를 준비하는 청년부”.</p>
+
+    <div class="reveal" style="margin-top:30px">
+      <div class="eyebrow">잇는 세 개의 다리</div>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 176" role="img" aria-label="여디디야와 이음을 잇는 세 개의 다리: 예배 섬김 훈련">
+        <!-- 기둥 -->
+        <rect x="8" y="34" width="58" height="108" rx="13" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.5"/>
+        <text x="37" y="84" text-anchor="middle" fill="#312E81" font-family="Noto Sans KR" font-size="12" font-weight="700">여디<tspan x="37" dy="15">디야</tspan></text>
+        <text x="37" y="120" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="8.5">미혼 청년부</text>
+        <rect x="294" y="34" width="58" height="108" rx="13" fill="#FDF2F8" stroke="#FBCFE8" stroke-width="1.5"/>
+        <text x="323" y="89" text-anchor="middle" fill="#9D174D" font-family="Noto Sans KR" font-size="12" font-weight="700">이음</text>
+        <text x="323" y="108" text-anchor="middle" fill="#C77AA0" font-family="Noto Sans KR" font-size="8.5">가정</text>
+        <!-- 다리 3 -->
+        <rect x="66" y="42" width="228" height="28" rx="14" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.6"/>
+        <text x="180" y="60" text-anchor="middle" fill="#3730A3" font-family="Noto Sans KR" font-size="11.5" font-weight="700">🙏 예배 · 연합예배</text>
+        <rect x="66" y="74" width="228" height="28" rx="14" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.6"/>
+        <text x="180" y="92" text-anchor="middle" fill="#475569" font-family="Noto Sans KR" font-size="11.5" font-weight="700">🤲 섬김 · 부서 봉사</text>
+        <rect x="66" y="106" width="228" height="28" rx="14" fill="#F4ECDC" stroke="#D9C08A" stroke-width="1.6"/>
+        <text x="180" y="124" text-anchor="middle" fill="#9A732F" font-family="Noto Sans KR" font-size="11.5" font-weight="700">📖 훈련 · 공동 양육</text>
+      </svg>
+    </div>
+
+    <details class="more reveal"><summary><span class="pl">＋</span> 세 목장 비교 · 분리 동선 자세히</summary>
+      <div class="tbl"><table>
+        <tr><th>구분</th><th>🌱 여디</th><th>🌳 디야</th><th>🏡 이음</th></tr>
+        <tr><td>이동</td><td>2년 재편성</td><td>거의 고정</td><td>가정 고정</td></tr>
+        <tr><td>규모</td><td>활동형</td><td>소수 정예</td><td><b>12목장+</b></td></tr>
+        <tr><td>모임</td><td>오후</td><td>오후</td><td><b>정오</b></td></tr>
+        <tr><td>연합예배</td><td>본 예배</td><td>본 예배</td><td>선택</td></tr>
+      </table></div>
+      <ul class="dlist">
+        <li><b>분리 동선</b> — 이음(정오)·여디디야(오후)가 갈려 20개+ 목장 병목이 사라짐. 같은 선교센터 모임실을 시간대로 나눠 사용.</li>
+        <li><b>여디</b> — 다니엘 진학생 진입장벽 완화, 여디 자치 임원으로 12~2시 활동.</li>
+        <li><b>디야</b> — 경계할 것은 폐쇄성. 새가족 유입 통로를 의도적으로 열어 둠.</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- PART 3 -->
+  <div class="band"><div class="pe">PART 03</div>
+    <div class="band-row"><div class="pno">03</div><h2>주일 리듬</h2></div>
+    <p>섬김으로 붓고, 예배로 채운다 — 또래 예배 하나로 끝내지 않기</p></div>
+  <section id="p3">
+    <div class="reveal">
+      <div class="eyebrow">붓고 · 채운다</div>
+      <h2 class="title">오전에 붓고,<br>오후에 채워진다</h2>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 200" role="img" aria-label="오전에 자신을 붓고 오후 연합예배에서 다시 채워지는 그릇 도식">
+        <!-- 라벨 상단 -->
+        <text x="80" y="22" text-anchor="middle" fill="#4F46E5" font-family="Noto Serif KR" font-size="13" font-weight="700">오전 · 붓다</text>
+        <text x="280" y="22" text-anchor="middle" fill="#B88A3E" font-family="Noto Serif KR" font-size="13" font-weight="700">오후 2시 · 채우다</text>
+
+        <!-- 왼쪽: 비워지는 그릇 -->
+        <path d="M56,58 H104 L99,118 Q80,128 61,118 Z" fill="#fff" stroke="#A7AEC8" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M64,104 Q80,100 96,104 L99,118 Q80,128 61,118 Z" fill="#DDE3F5"/>
+        <!-- 쏟아져 나가는 물방울 -->
+        <path d="M80,128 V147" stroke="#94A3B8" stroke-width="2" stroke-dasharray="1 5" stroke-linecap="round"/>
+        <path d="M74.5,142 L80,150 L85.5,142" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <ellipse cx="70" cy="140" rx="2.4" ry="3.4" fill="#B6BED6"/>
+        <ellipse cx="92" cy="146" rx="2" ry="3" fill="#B6BED6"/>
+        <text x="80" y="170" text-anchor="middle" fill="#475569" font-family="Noto Sans KR" font-size="11" font-weight="700">섬김 · 대예배</text>
+        <text x="80" y="184" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9">나를 쏟아붓는다</text>
+
+        <!-- 가운데 진행 화살표 -->
+        <path d="M138,92 H216" fill="none" stroke="#D7D9E6" stroke-width="2" stroke-linecap="round"/>
+        <path d="M213,87 L221,92 L213,97" fill="none" stroke="#C2A55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="180" y="84" text-anchor="middle" fill="#A7AEC8" font-family="Noto Sans KR" font-size="9.5">하루의 흐름</text>
+
+        <!-- 오른쪽: 채워지는 그릇 + 유입 스트림 -->
+        <text x="280" y="42" text-anchor="middle" fill="#B88A3E" font-family="Noto Sans KR" font-size="10.5" font-weight="700">연합예배</text>
+        <path d="M280,45 V56" stroke="#B88A3E" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M275,52 L280,59 L285,52" fill="none" stroke="#B88A3E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M256,64 H304 L299,124 Q280,134 261,124 Z" fill="#fff" stroke="#B88A3E" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M258,78 Q280,72 302,78 L299,124 Q280,134 261,124 Z" fill="#EBD9AE"/>
+        <path d="M258,78 Q280,72 302,78" fill="none" stroke="#D9C08A" stroke-width="1.5"/>
+        <text x="280" y="170" text-anchor="middle" fill="#9A732F" font-family="Noto Sans KR" font-size="11" font-weight="700">다시 채워진다</text>
+        <text x="280" y="184" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9">쏟아붓고 채워지는 자리</text>
+      </svg>
+    </div>
+    <div class="tracks reveal">
+      <div class="tk s"><div class="h">🙏 예배 트랙</div><div class="am">오전</div><div class="row">대예배로 전체 공동체와</div><div class="am">오후</div><div class="row">연합예배에서 채움</div></div>
+      <div class="tk w"><div class="h">🤲 섬김 트랙</div><div class="am">오전</div><div class="row">부서교사로 다음세대 섬김</div><div class="am">오후</div><div class="row">연합예배에서 채움</div></div>
+    </div>
+    <div class="note reveal"><div class="ic">🛋️</div><div class="tx"><b>12~2시는 ‘프로그램’이 아니라 ‘열린 공간’.</b> 그냥 머물 수 있는 쉼·식탁 교제로. 공간은 늘 열려 있고, 청년광장은 ‘이벤트 모드’로 가끔.</div></div>
+    <div class="note reveal"><div class="ic">⚖️</div><div class="tx">2025 피드백 — <b>의무감 ✕, 자발성·즐거움 ○.</b> “무조건 둘 다”가 아니라 ‘한 걸음 더’의 초대. 섬김은 로테이션으로 번아웃 방지.</div></div>
+  </section>
+
+  <!-- PART 4 -->
+  <div class="band"><div class="pe">PART 04</div>
+    <div class="band-row"><div class="pno">04</div><h2>양육 · 훈련</h2></div>
+    <p>이음 + 여디디야 공동 — 목자가 되는 한 길</p></div>
+  <section id="p4">
+    <div class="reveal">
+      <div class="eyebrow">목자가 되는 경로</div>
+      <h2 class="title">받아 깊어지고,<br>흘려보낸다</h2>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 96" role="img" aria-label="성경파노라마에서 1대1 제자양육을 거쳐 목자가 되는 경로">
+        <rect x="6" y="34" width="78" height="34" rx="8" fill="#F5F3FF" stroke="#E0E7FF" stroke-width="1.5"/>
+        <text x="45" y="50" text-anchor="middle" fill="#6B7280" font-family="Noto Sans KR" font-size="10.5">성경파노라마</text>
+        <text x="45" y="62" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="8.5">선택 · 4주</text>
+        <path d="M88 51 h16" stroke="#C7CBD9" stroke-width="2" marker-end="url(#a4)"/>
+        <defs><marker id="a4" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto"><path d="M1 1 L6 4 L1 7" fill="none" stroke="#4F46E5" stroke-width="1.6"/></marker></defs>
+        <rect x="108" y="32" width="80" height="38" rx="8" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/>
+        <text x="148" y="49" text-anchor="middle" fill="#312E81" font-family="Noto Sans KR" font-size="10.5" font-weight="700">예수님의 삶</text>
+        <text x="148" y="62" text-anchor="middle" fill="#4F46E5" font-family="Noto Sans KR" font-size="8.5">필수 · 6주</text>
+        <path d="M192 51 h16" stroke="#C7CBD9" stroke-width="2" marker-end="url(#a4)"/>
+        <rect x="212" y="32" width="78" height="38" rx="8" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/>
+        <text x="251" y="49" text-anchor="middle" fill="#312E81" font-family="Noto Sans KR" font-size="10.5" font-weight="700">1:1 제자양육</text>
+        <text x="251" y="62" text-anchor="middle" fill="#4F46E5" font-family="Noto Sans KR" font-size="8.5">필수 · 상시</text>
+        <path d="M294 51 h12" stroke="#C7CBD9" stroke-width="2" marker-end="url(#a4)"/>
+        <circle cx="332" cy="51" r="20" fill="#B88A3E"/><text x="332" y="49" text-anchor="middle" fill="#fff" font-family="Noto Serif KR" font-size="11" font-weight="700">목자</text>
+        <text x="332" y="61" text-anchor="middle" fill="#fff" font-family="Noto Sans KR" font-size="7.5">세움</text>
+      </svg>
+    </div>
+    <div class="note reveal"><div class="ic">📅</div><div class="tx"><b>토요일이 ‘훈련의 날’.</b> 10–12 파노라마(선택) → 13–15 예수님의 삶(필수) → 16시 임원회의. <b>시간 충돌 없음.</b> 담당: 구민선 전도사·윤여찬 목사.</div></div>
+  </section>
+
+  <!-- PART 5 -->
+  <div class="band"><div class="pe">PART 05</div>
+    <div class="band-row"><div class="pno">05</div><h2>외부 봉사 · 멘토링</h2></div>
+    <p>위드(With) 프로젝트 — 디야·이음이 함께하는 지속 멘토링</p></div>
+  <section id="p5">
+    <div class="reveal">
+      <div class="eyebrow">관계는 단계로 깊어진다</div>
+      <h2 class="title">단체에서 시작해<br>한 사람에게로</h2>
+      <p class="cap">구세군대전혜생원 아동과의 지속 관계 — 일회성이 아닌 돌봄.</p>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 168" role="img" aria-label="단체에서 2대2를 거쳐 1대1로 좁혀지는 멘토링 단계">
+        <polygon points="40,18 320,18 286,58 74,58" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.5"/>
+        <text x="180" y="43" text-anchor="middle" fill="#312E81" font-family="Noto Sans KR" font-size="12" font-weight="700">① 단체 활동 · 약 2개월</text>
+        <polygon points="80,70 280,70 250,110 110,110" fill="#E0E7FF" stroke="#4F46E5" stroke-width="1.5"/>
+        <text x="180" y="95" text-anchor="middle" fill="#312E81" font-family="Noto Sans KR" font-size="12" font-weight="700">② 2:2 매칭 · 매월 1회</text>
+        <polygon points="116,122 244,122 220,158 140,158" fill="#B88A3E" stroke="#9A732F" stroke-width="1.5"/>
+        <text x="180" y="145" text-anchor="middle" fill="#fff" font-family="Noto Sans KR" font-size="12" font-weight="700">③ 선택적 1:1</text>
+      </svg>
+    </div>
+    <div class="note reveal"><div class="ic">🤝</div><div class="tx"><b>지속성·책임이 곧 돌봄.</b> 중도 이탈은 아동에게 또 다른 분리 경험 — 헌신 가능한 인원 중심으로, 2:2 구조로 부담을 나눕니다. 사전 오리엔테이션 필수.</div></div>
+  </section>
+
+  <!-- PART 6 -->
+  <div class="band"><div class="pe">PART 06</div>
+    <div class="band-row"><div class="pno">06</div><h2>사명자 순환</h2></div>
+    <p>세우고, 쉬게 한다 — 소모가 아니라 순환</p></div>
+  <section id="p6">
+    <div class="reveal">
+      <div class="eyebrow">안식이 있는 리더십</div>
+      <h2 class="title">새 리더가 나와야,<br>쉴 수 있다</h2>
+    </div>
+    <div class="vcard reveal">
+      <svg viewBox="0 0 360 200" role="img" aria-label="세움 섬김 안식 재충전이 도는 순환 도식">
+        <defs><marker id="ac" markerWidth="9" markerHeight="9" refX="4" refY="5" orient="auto"><path d="M1 1 L6 5 L1 8" fill="none" stroke="#4F46E5" stroke-width="1.6"/></marker></defs>
+        <circle cx="180" cy="100" r="66" fill="none" stroke="#E0E7FF" stroke-width="2" stroke-dasharray="3 6"/>
+        <path d="M180 34 A66 66 0 0 1 246 100" fill="none" stroke="#4F46E5" stroke-width="2.4" marker-end="url(#ac)"/>
+        <path d="M246 100 A66 66 0 0 1 180 166" fill="none" stroke="#4F46E5" stroke-width="2.4" marker-end="url(#ac)"/>
+        <path d="M180 166 A66 66 0 0 1 114 100" fill="none" stroke="#4F46E5" stroke-width="2.4" marker-end="url(#ac)"/>
+        <path d="M114 100 A66 66 0 0 1 180 34" fill="none" stroke="#4F46E5" stroke-width="2.4" marker-end="url(#ac)"/>
+        <g font-family="Noto Sans KR" font-weight="700" font-size="11.5" fill="#312E81" text-anchor="middle">
+          <circle cx="180" cy="34" r="17" fill="#fff" stroke="#4F46E5" stroke-width="2"/><text x="180" y="38">세움</text>
+          <circle cx="246" cy="100" r="17" fill="#fff" stroke="#4F46E5" stroke-width="2"/><text x="246" y="104">섬김</text>
+          <circle cx="180" cy="166" r="17" fill="#B88A3E" stroke="#9A732F" stroke-width="2"/><text x="180" y="170" fill="#fff">안식</text>
+          <circle cx="114" cy="100" r="17" fill="#fff" stroke="#4F46E5" stroke-width="2"/><text x="114" y="104">재충전</text>
+        </g>
+        <text x="180" y="98" text-anchor="middle" fill="#8A90A0" font-family="Noto Serif KR" font-size="12" font-weight="700">순환</text>
+        <text x="180" y="114" text-anchor="middle" fill="#8A90A0" font-family="Noto Sans KR" font-size="9">임기제 · 안식 학기</text>
+      </svg>
+    </div>
+    <div class="note reveal"><div class="ic">💡</div><div class="tx">‘사명자’는 혼자 끝까지 버티는 사람이 아니라, <b>다음 사명자를 길러 함께 짊어지는 사람</b>입니다. 훈련(Part 4)이 곧 순환의 엔진.</div></div>
+  </section>
+
+  <!-- PART 7 -->
+  <div class="band"><div class="pe">PART 07</div>
+    <div class="band-row"><div class="pno">07</div><h2>논의 &amp; 다음 단계</h2></div>
+    <p>회의에서 결정할 핵심과, 가장 먼저 할 일</p></div>
+  <section id="p7">
+    <div class="reveal">
+      <div class="eyebrow">먼저 할 일</div>
+      <h2 class="title">이음교구와 구조 협의부터</h2>
+    </div>
+    <div class="steps reveal vcard" style="padding:8px 18px">
+      <div class="stp"><div class="k">1</div><div class="v"><b>이음교구 협의</b> — 오전 목장 → 오후 연합 참여 구조</div></div>
+      <div class="stp"><div class="k">2</div><div class="v"><b>여디 자치 임원</b> 구성 → 12~2시 활동 시작</div></div>
+      <div class="stp"><div class="k">3</div><div class="v"><b>사명자 순환·안식</b> 시스템 설계 (임기제)</div></div>
+      <div class="stp"><div class="k">4</div><div class="v"><b>양육·멘토링</b> 추진 (구민선 전도사 · 시설 협의)</div></div>
+      <div class="stp"><div class="k">5</div><div class="v"><b>연합예배 파일럿</b> → 피드백 → 정착</div></div>
+    </div>
+
+    <details class="more reveal"><summary><span class="pl">＋</span> 회의 결정 사항 16가지 펼치기</summary>
+      <div class="dg">
+        <div><span class="no">01</span>이음교구 구조 동의</div>
+        <div><span class="no">02</span>🫶 영유아 부모 환대</div>
+        <div><span class="no">03</span>부서 봉사 확대·로테이션</div>
+        <div><span class="no">04</span>대예배 독려(초대형)</div>
+        <div><span class="no">05</span>12~2시 열린 쉼터</div>
+        <div><span class="no">06</span>양육교육 운영 협의</div>
+        <div><span class="no">07</span>멘토링·시설 협의</div>
+        <div><span class="no">08</span>목장 분리 동선 확정</div>
+        <div><span class="no">09</span>이음 정오 자녀 돌봄</div>
+        <div><span class="no">10</span>여디 2년 재편성</div>
+        <div><span class="no">11</span>🌱 여디 자치 임원</div>
+        <div><span class="no">12</span>다니엘 연계·안착</div>
+        <div><span class="no">13</span>🔁 순환·안식 시스템</div>
+        <div><span class="no">14</span>디야 폐쇄성 방지</div>
+        <div><span class="no">15</span>연합 참여 독려</div>
+        <div><span class="no">16</span>지오스 운영·지원</div>
+      </div>
+    </details>
+  </section>
+
+  <footer class="foot">
+    <div class="s">두 개의 시간, 하나의 공동체</div>
+    <div class="d">여디디야 청년부 · 총무 김범수 · 2026년 6월</div>
+    <div class="n">검토용 초안입니다. 자유롭게 수정·보완해 주세요.</div>
+  </footer>
+
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('bar');
+  function onScroll(){var h=document.documentElement;var sc=h.scrollTop||document.body.scrollTop;
+    var mx=(h.scrollHeight-h.clientHeight)||1;bar.style.width=(sc/mx*100)+'%';}
+  document.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var ok=('IntersectionObserver' in window) && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  if(ok){
+    document.documentElement.classList.add('anim');
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }
+})();
+</script>
+</body>
+</html>
